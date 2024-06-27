@@ -1,6 +1,5 @@
 # Forest-Fire-Detection
-This project is made using Python Open CV library , It will detect the forest fires through camera and send "alert!" mail to the forest officer and also sounds siren 
-
+This project is made using Python Open CV library , It will detect the forest fires through video input through camera and send "alert!" mail to the forest officer and also sounds siren
 1. Project requirements:
 	Latest version python installed in system.
 	https://www.python.org/downloads/
