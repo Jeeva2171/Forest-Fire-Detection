@@ -15,15 +15,15 @@ def play_alarm_sound_function(): # defined function to play alarm post fire dete
 
 def send_mail_function(): # defined function to send mail post fire detection using threading
     
-    recipientmail = "bharadwajvemireddy@gmail.com" # recipients mail
+    recipientmail = "Enter receptaints mail id" # recipients mail
     recipientmail = recipientmail.lower() # To lower case mail
     
     try:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.ehlo()
         server.starttls()
-        server.login("vtu19561@veltech.edu.in", 'Jeeva@2003') # Senders mail ID and password
-        server.sendmail('bharadwajvemireddy@gmail.com', recipientmail, "Warning fire accident has been reported") # recipients mail with mail message
+        server.login("Enter sender mail", 'Enter your mail password') # Senders mail ID and password
+        server.sendmail('Enter receptaints mail id', recipientmail, "Warning fire accident has been reported") # recipients mail with mail message
         print("Alert mail sent sucesfully to {}".format(recipientmail)) # to print in consol to whome mail is sent
         server.close() ## To close server
         
